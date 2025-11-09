@@ -1,1 +1,1 @@
-{"kind": ["monitoring_application"], "categories": ["structured-ML", "model-serving"]}
+{"categories": ["model-serving", "structured-ML"], "kind": ["monitoring_application"]}
