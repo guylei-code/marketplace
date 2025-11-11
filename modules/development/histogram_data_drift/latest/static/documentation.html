@@ -165,8 +165,33 @@ document.write(`
 <nav aria-label="Page">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-data-drift-histogram-data-drift-module">histogram_data_drift.histogram_data_drift module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-histogram_data_drift.histogram_data_drift">histogram_data_drift.histogram_data_drift module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.detected"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier.detected</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.potential"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier.potential</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.value_to_status"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier.value_to_status()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.NAME"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication.NAME</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.do_tracking"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication.do_tracking()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.metrics"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication.metrics</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplicationConstants</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.GENERAL_RESULT_NAME"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplicationConstants.GENERAL_RESULT_NAME</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.NAME"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplicationConstants.NAME</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.InvalidMetricValueError"><code class="docutils literal notranslate"><span class="pre">InvalidMetricValueError</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.InvalidThresholdValueError"><code class="docutils literal notranslate"><span class="pre">InvalidThresholdValueError</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.ValueClassifier"><code class="docutils literal notranslate"><span class="pre">ValueClassifier</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.ValueClassifier.value_to_status"><code class="docutils literal notranslate"><span class="pre">ValueClassifier.value_to_status()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-histogram_data_drift">Module contents</a></li>
 </ul>
 </nav>
 </div>
@@ -179,11 +204,110 @@ document.write(`
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
 </section>
-<section id="histogram-data-drift-histogram-data-drift-module">
-<h2>histogram_data_drift.histogram_data_drift module<a class="headerlink" href="#histogram-data-drift-histogram-data-drift-module" title="Link to this heading">#</a></h2>
+<section id="module-histogram_data_drift.histogram_data_drift">
+<span id="histogram-data-drift-histogram-data-drift-module"></span><h2>histogram_data_drift.histogram_data_drift module<a class="headerlink" href="#module-histogram_data_drift.histogram_data_drift" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.DataDriftClassifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">histogram_data_drift.histogram_data_drift.</span></span><span class="sig-name descname"><span class="pre">DataDriftClassifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">potential</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detected</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.7</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="histogram_data_drift.html#DataDriftClassifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classify data drift numeric values into categorical status.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.DataDriftClassifier.detected">
+<span class="sig-name descname"><span class="pre">detected</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.7</span></em><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.detected" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.DataDriftClassifier.potential">
+<span class="sig-name descname"><span class="pre">potential</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.potential" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.DataDriftClassifier.value_to_status">
+<span class="sig-name descname"><span class="pre">value_to_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">ResultStatusApp</span></span></span><a class="reference internal" href="histogram_data_drift.html#DataDriftClassifier.value_to_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.value_to_status" title="Link to this definition">#</a></dt>
+<dd><p>Translate the numeric value into status category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> – The numeric value of the data drift metric, between 0 and 1.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><cite>ResultStatusApp</cite> according to the classification.</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">histogram_data_drift.histogram_data_drift.</span></span><span class="sig-name descname"><span class="pre">HistogramDataDriftApplication</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value_classifier</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#histogram_data_drift.histogram_data_drift.ValueClassifier" title="histogram_data_drift.histogram_data_drift.ValueClassifier"><span class="pre">ValueClassifier</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">produce_json_artifact</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">produce_plotly_artifact</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="histogram_data_drift.html#HistogramDataDriftApplication"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelMonitoringApplicationBase</span></code></p>
+<p>MLRun’s default data drift application for model monitoring.</p>
+<p>The application expects tabular numerical data, and calculates three metrics over the shared features’ histograms.
+The metrics are calculated on features that have reference data from the training dataset. When there is no
+reference data (<cite>feature_stats</cite>), this application send a warning log and does nothing.
+The three metrics are:</p>
+<ul class="simple">
+<li><p>Hellinger distance.</p></li>
+<li><p>Total variance distance.</p></li>
+<li><p>Kullback-Leibler divergence.</p></li>
+</ul>
+<p>Each metric is calculated over all the features individually and the mean is taken as the metric value.
+The average of Hellinger and total variance distance is taken as the result.</p>
+<p>The application can log two artifacts (disabled by default due to performance issues):</p>
+<ul class="simple">
+<li><p>JSON with the general drift value per feature.</p></li>
+<li><p>Plotly table with the various metrics and histograms per feature.</p></li>
+</ul>
+<p>If you want to change the application defaults, such as the classifier or which artifacts to produce, you
+can either modify the downloaded source code file directly, or inherit from this class (in the same file), then
+deploy it as any other model monitoring application.
+Please make sure to keep the default application name. This ensures that the full functionality of the application,
+including the statistics view in the UI, is available.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.NAME">
+<span class="sig-name descname"><span class="pre">NAME</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Final</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'histogram-data-drift'</span></em><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.NAME" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.do_tracking">
+<span class="sig-name descname"><span class="pre">do_tracking</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monitoring_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MonitoringApplicationContext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">ModelMonitoringApplicationResult</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">ModelMonitoringApplicationMetric</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">_ModelMonitoringApplicationStats</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="histogram_data_drift.html#HistogramDataDriftApplication.do_tracking"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.do_tracking" title="Link to this definition">#</a></dt>
+<dd><p>Calculate and return the data drift metrics, averaged over the features.</p>
+</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.metrics">
+<span class="sig-name descname"><span class="pre">metrics</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">type</span><span class="p"><span class="pre">[</span></span><span class="pre">mlrun.model_monitoring.metrics.histogram_distance.HistogramDistanceMetric</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[mlrun.model_monitoring.metrics.histogram_distance.HellingerDistance,</span> <span class="pre">mlrun.model_monitoring.metrics.histogram_distance.KullbackLeiblerDivergence,</span> <span class="pre">mlrun.model_monitoring.metrics.histogram_distance.TotalVarianceDistance]</span></em><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.metrics" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">histogram_data_drift.histogram_data_drift.</span></span><span class="sig-name descname"><span class="pre">HistogramDataDriftApplicationConstants</span></span><a class="reference internal" href="histogram_data_drift.html#HistogramDataDriftApplicationConstants"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.GENERAL_RESULT_NAME">
+<span class="sig-name descname"><span class="pre">GENERAL_RESULT_NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'general_drift'</span></em><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.GENERAL_RESULT_NAME" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.NAME">
+<span class="sig-name descname"><span class="pre">NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'histogram-data-drift'</span></em><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.NAME" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.InvalidMetricValueError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">histogram_data_drift.histogram_data_drift.</span></span><span class="sig-name descname"><span class="pre">InvalidMetricValueError</span></span><a class="reference internal" href="histogram_data_drift.html#InvalidMetricValueError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.InvalidMetricValueError" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+</dd></dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.InvalidThresholdValueError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">histogram_data_drift.histogram_data_drift.</span></span><span class="sig-name descname"><span class="pre">InvalidThresholdValueError</span></span><a class="reference internal" href="histogram_data_drift.html#InvalidThresholdValueError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.InvalidThresholdValueError" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.ValueClassifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">histogram_data_drift.histogram_data_drift.</span></span><span class="sig-name descname"><span class="pre">ValueClassifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="histogram_data_drift.html#ValueClassifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.ValueClassifier" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Protocol</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="histogram_data_drift.histogram_data_drift.ValueClassifier.value_to_status">
+<span class="sig-name descname"><span class="pre">value_to_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">ResultStatusApp</span></span></span><a class="reference internal" href="histogram_data_drift.html#ValueClassifier.value_to_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#histogram_data_drift.histogram_data_drift.ValueClassifier.value_to_status" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+</dd></dl>
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<section id="module-histogram_data_drift">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-histogram_data_drift" title="Link to this heading">#</a></h2>
 </section>
 </section>
 </article>
@@ -200,8 +324,33 @@ document.write(`
 <nav class="bd-toc-nav page-toc">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram-data-drift-histogram-data-drift-module">histogram_data_drift.histogram_data_drift module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-histogram_data_drift.histogram_data_drift">histogram_data_drift.histogram_data_drift module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.detected"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier.detected</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.potential"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier.potential</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.DataDriftClassifier.value_to_status"><code class="docutils literal notranslate"><span class="pre">DataDriftClassifier.value_to_status()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.NAME"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication.NAME</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.do_tracking"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication.do_tracking()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplication.metrics"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplication.metrics</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplicationConstants</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.GENERAL_RESULT_NAME"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplicationConstants.GENERAL_RESULT_NAME</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.HistogramDataDriftApplicationConstants.NAME"><code class="docutils literal notranslate"><span class="pre">HistogramDataDriftApplicationConstants.NAME</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.InvalidMetricValueError"><code class="docutils literal notranslate"><span class="pre">InvalidMetricValueError</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.InvalidThresholdValueError"><code class="docutils literal notranslate"><span class="pre">InvalidThresholdValueError</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.ValueClassifier"><code class="docutils literal notranslate"><span class="pre">ValueClassifier</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram_data_drift.histogram_data_drift.ValueClassifier.value_to_status"><code class="docutils literal notranslate"><span class="pre">ValueClassifier.value_to_status()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-histogram_data_drift">Module contents</a></li>
 </ul>
 </nav></div>
 </div></div>

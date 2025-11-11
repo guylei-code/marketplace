@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html data-content_root="./" data-theme="light" lang="en">
+<html data-content_root="../../" data-theme="light" lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>count_events package</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>count_events.count_events</title>
 <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
@@ -37,9 +37,9 @@
 <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script>DOCUMENTATION_OPTIONS.pagename = 'count_events';</script>
-<link href="genindex.html" rel="index" title="Index"/>
-<link href="search.html" rel="search" title="Search"/>
+<script>DOCUMENTATION_OPTIONS.pagename = '_modules/count_events/count_events';</script>
+<link href="../../genindex.html" rel="index" title="Index"/>
+<link href="../../search.html" rel="search" title="Search"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="en" name="docsearch:language"/>
 </head>
@@ -55,7 +55,7 @@
 <div class="search-button__wrapper">
 <div class="search-button__overlay"></div>
 <div class="search-button__search-container">
-<form action="search.html" class="bd-search d-flex align-items-center" method="get">
+<form action="../../search.html" class="bd-search d-flex align-items-center" method="get">
 <i class="fa-solid fa-magnifying-glass"></i>
 <input aria-label="" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="" spellcheck="false" type="search"/>
 <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
@@ -73,7 +73,7 @@
 </div>
 <div class="sidebar-primary-items__start sidebar-primary__section">
 <div class="sidebar-primary-item">
-<a class="navbar-brand logo" href="index.html">
+<a class="navbar-brand logo" href="../../index.html">
 <p class="title logo__title"></p>
 </a></div>
 <div class="sidebar-primary-item">
@@ -109,28 +109,6 @@
 <div class="header-article-items__end">
 <div class="header-article-item">
 <div class="article-header-buttons">
-<div class="dropdown dropdown-download-buttons">
-<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
-<i class="fas fa-download"></i>
-</button>
-<ul class="dropdown-menu">
-<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="_sources/count_events.rst" target="_blank" title="Download source file">
-<span class="btn__icon-container">
-<i class="fas fa-file"></i>
-</span>
-<span class="btn__text-container">.rst</span>
-</a>
-</li>
-<li>
-<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
-<span class="btn__icon-container">
-<i class="fas fa-file-pdf"></i>
-</span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-</ul>
-</div>
 <script>
 document.write(`
   <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -147,95 +125,84 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Toggle secondary sidebar">
-<span class="fa-solid fa-list"></span>
-</button>
 </div></div>
 </div>
 </div>
 </div>
 <div class="onlyprint" id="jb-print-docs-body">
-<h1>count_events package</h1>
+<h1></h1>
 <!-- Table of contents -->
 <div id="print-main-content">
 <div id="jb-print-toc">
-<div>
-<h2> Contents </h2>
-</div>
-<nav aria-label="Page">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events.count_events">count_events.count_events module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp"><code class="docutils literal notranslate"><span class="pre">CountApp</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp.do_tracking"><code class="docutils literal notranslate"><span class="pre">CountApp.do_tracking()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events">Module contents</a></li>
-</ul>
-</nav>
 </div>
 </div>
 </div>
 <div id="searchbox"></div>
 <article class="bd-article">
-<section id="count-events-package">
-<h1>count_events package<a class="headerlink" href="#count-events-package" title="Link to this heading">#</a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
-</section>
-<section id="module-count_events.count_events">
-<span id="count-events-count-events-module"></span><h2>count_events.count_events module<a class="headerlink" href="#module-count_events.count_events" title="Link to this heading">#</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="count_events.count_events.CountApp">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">count_events.count_events.</span></span><span class="sig-name descname"><span class="pre">CountApp</span></span><a class="reference internal" href="count_events.html#CountApp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#count_events.count_events.CountApp" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelMonitoringApplicationBase</span></code></p>
-<p>Model Monitoring Application that counts the number of events in the given time window.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="count_events.count_events.CountApp.do_tracking">
-<span class="sig-name descname"><span class="pre">do_tracking</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monitoring_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MonitoringApplicationContext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">ModelMonitoringApplicationMetric</span></span></span><a class="reference internal" href="count_events.html#CountApp.do_tracking"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#count_events.count_events.CountApp.do_tracking" title="Link to this definition">#</a></dt>
-<dd><p>”
-he do_tracking method implementation for the CountApp class.
-It counts the number of events in the sample data-frame and logs the count.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>monitoring_context</strong> – The monitoring application context. It includes the current window data as a
-pandas data-frame: monitoring_context.sample_df.</p>
-</dd>
-</dl>
-</dd></dl>
-</dd></dl>
-</section>
-<section id="module-count_events">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-count_events" title="Link to this heading">#</a></h2>
-</section>
-</section>
+<h1>Source code for count_events.count_events</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright 2025 Iguazio</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the "License");</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an "AS IS" BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+<span class="c1">#</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">mlrun.model_monitoring.applications</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ModelMonitoringApplicationBase</span><span class="p">,</span> <span class="n">ModelMonitoringApplicationMetric</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">mlrun.model_monitoring.applications.context</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mm_context</span>
+
+
+<div class="viewcode-block" id="CountApp">
+<a class="viewcode-back" href="documentation.html#count_events.count_events.CountApp">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">CountApp</span><span class="p">(</span><span class="n">ModelMonitoringApplicationBase</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    Model Monitoring Application that counts the number of events in the given time window.</span>
+<span class="sd">    """</span>
+<div class="viewcode-block" id="CountApp.do_tracking">
+<a class="viewcode-back" href="documentation.html#count_events.count_events.CountApp.do_tracking">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">do_tracking</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">monitoring_context</span><span class="p">:</span> <span class="n">mm_context</span><span class="o">.</span><span class="n">MonitoringApplicationContext</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModelMonitoringApplicationMetric</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">""""</span>
+<span class="sd">        he do_tracking method implementation for the CountApp class.</span>
+<span class="sd">        It counts the number of events in the sample data-frame and logs the count.</span>
+
+<span class="sd">        :param monitoring_context: The monitoring application context. It includes the current window data as a</span>
+<span class="sd">                                   pandas data-frame: monitoring_context.sample_df.</span>
+<span class="sd">        """</span>
+        <span class="n">sample_df</span> <span class="o">=</span> <span class="n">monitoring_context</span><span class="o">.</span><span class="n">sample_df</span>
+        <span class="n">monitoring_context</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Sample data-frame"</span><span class="p">,</span> <span class="n">sample_df</span><span class="o">=</span><span class="n">sample_df</span><span class="p">)</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sample_df</span><span class="p">)</span>
+        <span class="n">monitoring_context</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s2">"Counted events for model endpoint window"</span><span class="p">,</span>
+            <span class="n">model_endpoint_name</span><span class="o">=</span><span class="n">monitoring_context</span><span class="o">.</span><span class="n">model_endpoint</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">count</span><span class="o">=</span><span class="n">count</span><span class="p">,</span>
+            <span class="n">start</span><span class="o">=</span><span class="n">monitoring_context</span><span class="o">.</span><span class="n">start_infer_time</span><span class="p">,</span>
+            <span class="n">end</span><span class="o">=</span><span class="n">monitoring_context</span><span class="o">.</span><span class="n">end_infer_time</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">ModelMonitoringApplicationMetric</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="s2">"count"</span><span class="p">,</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">count</span><span class="p">,</span>
+        <span class="p">)</span></div>
+</div>
+
+</pre></div>
 </article>
 <footer class="prev-next-footer d-print-none">
 <div class="prev-next-area">
 </div>
 </footer>
 </div>
-<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-<div class="sidebar-secondary-item">
-<div class="page-toc tocsection onthispage">
-<i class="fa-solid fa-list"></i> Contents
-  </div>
-<nav class="bd-toc-nav page-toc">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events.count_events">count_events.count_events module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp"><code class="docutils literal notranslate"><span class="pre">CountApp</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp.do_tracking"><code class="docutils literal notranslate"><span class="pre">CountApp.do_tracking()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events">Module contents</a></li>
-</ul>
-</nav></div>
-</div></div>
 </div>
 <footer class="bd-footer-content">
 <div class="bd-footer-content__inner container">

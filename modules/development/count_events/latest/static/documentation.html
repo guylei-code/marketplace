@@ -165,8 +165,14 @@ document.write(`
 <nav aria-label="Page">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#count-events-count-events-module">count_events.count_events module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events.count_events">count_events.count_events module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp"><code class="docutils literal notranslate"><span class="pre">CountApp</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp.do_tracking"><code class="docutils literal notranslate"><span class="pre">CountApp.do_tracking()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events">Module contents</a></li>
 </ul>
 </nav>
 </div>
@@ -179,11 +185,30 @@ document.write(`
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
 </section>
-<section id="count-events-count-events-module">
-<h2>count_events.count_events module<a class="headerlink" href="#count-events-count-events-module" title="Link to this heading">#</a></h2>
+<section id="module-count_events.count_events">
+<span id="count-events-count-events-module"></span><h2>count_events.count_events module<a class="headerlink" href="#module-count_events.count_events" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="count_events.count_events.CountApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">count_events.count_events.</span></span><span class="sig-name descname"><span class="pre">CountApp</span></span><a class="reference internal" href="count_events.html#CountApp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#count_events.count_events.CountApp" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelMonitoringApplicationBase</span></code></p>
+<p>Model Monitoring Application that counts the number of events in the given time window.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="count_events.count_events.CountApp.do_tracking">
+<span class="sig-name descname"><span class="pre">do_tracking</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monitoring_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MonitoringApplicationContext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">ModelMonitoringApplicationMetric</span></span></span><a class="reference internal" href="count_events.html#CountApp.do_tracking"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#count_events.count_events.CountApp.do_tracking" title="Link to this definition">#</a></dt>
+<dd><p>”
+he do_tracking method implementation for the CountApp class.
+It counts the number of events in the sample data-frame and logs the count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>monitoring_context</strong> – The monitoring application context. It includes the current window data as a
+pandas data-frame: monitoring_context.sample_df.</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<section id="module-count_events">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-count_events" title="Link to this heading">#</a></h2>
 </section>
 </section>
 </article>
@@ -200,8 +225,14 @@ document.write(`
 <nav class="bd-toc-nav page-toc">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#count-events-count-events-module">count_events.count_events module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events.count_events">count_events.count_events module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp"><code class="docutils literal notranslate"><span class="pre">CountApp</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#count_events.count_events.CountApp.do_tracking"><code class="docutils literal notranslate"><span class="pre">CountApp.do_tracking()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-count_events">Module contents</a></li>
 </ul>
 </nav></div>
 </div></div>
