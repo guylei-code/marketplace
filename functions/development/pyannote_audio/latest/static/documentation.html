@@ -22,7 +22,7 @@
 <link href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/css/custom.css?v=9816bda1" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/custom.css?v=a569c0df" rel="stylesheet" type="text/css"/>
 <!-- Pre-loaded scripts that we'll load fully later -->
 <link as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" rel="preload"/>
 <link as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" rel="preload"/>
@@ -165,11 +165,7 @@ document.write(`
 <nav aria-label="Page">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pyannote_audio.pyannote_audio">pyannote_audio.pyannote_audio module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyannote_audio.pyannote_audio.diarize"><code class="docutils literal notranslate"><span class="pre">diarize()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyannote_audio.pyannote_audio.open_mpi_handler"><code class="docutils literal notranslate"><span class="pre">open_mpi_handler()</span></code></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyannote-audio-pyannote-audio-module">pyannote_audio.pyannote_audio module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pyannote_audio">Module contents</a></li>
 </ul>
 </nav>
@@ -183,75 +179,8 @@ document.write(`
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
 </section>
-<section id="module-pyannote_audio.pyannote_audio">
-<span id="pyannote-audio-pyannote-audio-module"></span><h2>pyannote_audio.pyannote_audio module<a class="headerlink" href="#module-pyannote_audio.pyannote_audio" title="Link to this heading">#</a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="pyannote_audio.pyannote_audio.diarize">
-<span class="sig-prename descclassname"><span class="pre">pyannote_audio.pyannote_audio.</span></span><span class="sig-name descname"><span class="pre">diarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'pyannote/speaker-diarization-3.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speakers_labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">speaker_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'speaker_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separate_by_channels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum_speakers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum_speakers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="pyannote_audio.html#diarize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyannote_audio.pyannote_audio.diarize" title="Link to this definition">#</a></dt>
-<dd><p>Perform speech diarization on given audio files using pyannote-audio (<a class="github reference external" href="https://github.com/pyannote/pyannote-audio">pyannote/pyannote-audio</a>).
-The end result is a dictionary with the file names as keys and their diarization as value. A diarization is a list
-of tuples: (start, end, speaker_label).</p>
-<p>To use the <cite>pyannote.audio</cite> models you must pass a Huggingface token and get access to the required models. The
-token can be passed in one of the following options:</p>
-<ul class="simple">
-<li><p>Use the parameter <cite>access_token</cite>.</p></li>
-<li><p>Set an environment variable named “HUGGING_FACE_HUB_TOKEN”.</p></li>
-<li><p>If using MLRun, you can pass it as a secret named “HUGGING_FACE_HUB_TOKEN”.</p></li>
-</ul>
-<p>To get access to the models on Huggingface, visit their page. For example, to use the default diarization model set
-in this function (“pyannote/speaker-diarization-3.0”), you need access for these two models:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://huggingface.co/pyannote/segmentation-3.0">https://huggingface.co/pyannote/segmentation-3.0</a></p></li>
-<li><p><a class="reference external" href="https://huggingface.co/pyannote/speaker-diarization-3.0">https://huggingface.co/pyannote/speaker-diarization-3.0</a></p></li>
-</ul>
-<p>Note: To control the recognized speakers in the diarization output you can choose one of the following methods:</p>
-<ul class="simple">
-<li><p>For a known speakers amount, you may set speaker labels via the <cite>speakers_labels</cite> parameter that will be used in
-the order of speaking in the audio (first person speaking be the first label in the list). In addition, you can do
-diarization per channel (setting the parameter <cite>separate_by_channels</cite> to True). Each label will be assigned to a
-specific channel by order (first label to channel 0, second label to channel 1 and so on). Notice, this will
-increase runtime.</p></li>
-<li><p>For unknown speakers amount, you can set the <cite>speaker_prefix</cite> parameter to add a prefix for each speaker number.
-You can also help the diarization by setting the speakers range via the <cite>speakers_amount_range</cite> parameter.</p></li>
-</ul>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>data_path</strong> – A directory of the audio files, a single file or a list of files to transcribe.</p></li>
-<li><p><strong>model_name</strong> – One of the official diarization model names (referred as diarization pipelines) of
-<cite>pyannote.audio</cite> Huggingface page. Default: “pyannote/speaker-diarization-3.0”.</p></li>
-<li><p><strong>access_token</strong> – An access token to pass for using the <cite>pyannote.audio</cite> models. If not provided, it
-will be looking for the environment variable “HUGGING_FACE_HUB_TOKEN”. If MLRun is
-available, it will look for a secret “HUGGING_FACE_HUB_TOKEN”.</p></li>
-<li><p><strong>device</strong> – Device to load the model. Can be one of {“cuda”, “cpu”}. Default will prefer “cuda” if
-available.</p></li>
-<li><p><strong>speakers_labels</strong> – Labels to use for the recognized speakers. Default: numeric labels (0, 1, …).</p></li>
-<li><p><strong>separate_by_channels</strong> – If each speaker is speaking in a separate channel, you can diarize each channel and
-combine the result into a single diarization. Each label set in the <cite>speakers_labels</cite>
-parameter will be assigned to a specific channel by order.</p></li>
-<li><p><strong>speaker_prefix</strong> – A prefix to add for the speakers labels. This parameter is ignored if
-<cite>speakers_labels</cite> is not None. Default: “speaker”.</p></li>
-<li><p><strong>minimum_speakers</strong> – Set the minimum expected amount of speakers to be in the audio files. This parameter is
-ignored if <cite>speakers_labels</cite> is not None.</p></li>
-<li><p><strong>maximum_speakers</strong> – Set the maximum expected amount of speakers to be in the audio files. This parameter is
-ignored if <cite>speakers_labels</cite> is not None.</p></li>
-<li><p><strong>verbose</strong> – Whether to present logs of a progress bar and errors. Default: True.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><p>A tuple of:</p>
-<ul class="simple">
-<li><p>Speech diarization dictionary.</p></li>
-<li><p>A dictionary of errored files that were not transcribed.</p></li>
-</ul>
-</p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py function">
-<dt class="sig sig-object py" id="pyannote_audio.pyannote_audio.open_mpi_handler">
-<span class="sig-prename descclassname"><span class="pre">pyannote_audio.pyannote_audio.</span></span><span class="sig-name descname"><span class="pre">open_mpi_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">worker_inputs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_worker_inputs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="pyannote_audio.html#open_mpi_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyannote_audio.pyannote_audio.open_mpi_handler" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
+<section id="pyannote-audio-pyannote-audio-module">
+<h2>pyannote_audio.pyannote_audio module<a class="headerlink" href="#pyannote-audio-pyannote-audio-module" title="Link to this heading">#</a></h2>
 </section>
 <section id="module-pyannote_audio">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyannote_audio" title="Link to this heading">#</a></h2>
@@ -271,11 +200,7 @@ ignored if <cite>speakers_labels</cite> is not None.</p></li>
 <nav class="bd-toc-nav page-toc">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pyannote_audio.pyannote_audio">pyannote_audio.pyannote_audio module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyannote_audio.pyannote_audio.diarize"><code class="docutils literal notranslate"><span class="pre">diarize()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyannote_audio.pyannote_audio.open_mpi_handler"><code class="docutils literal notranslate"><span class="pre">open_mpi_handler()</span></code></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyannote-audio-pyannote-audio-module">pyannote_audio.pyannote_audio module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pyannote_audio">Module contents</a></li>
 </ul>
 </nav></div>
