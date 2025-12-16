@@ -1,6 +1,0 @@
-mlrun
-pandas
-scikit-learn
-matplotlib
-seaborn
-scikit-plot
